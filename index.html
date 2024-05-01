@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuerry - EBAC</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Minha agenda</h1>
+        <h3 id="subtitles">Adicione abaixo suas tarefas.</h3>
+    </header>
+    <div class="container">
+        <form id="form">
+            <label for="text">Nome da atividade</label>
+            <input type="text" id="nameAct" placeholder="Nome" required>
+            <label for="date">Data limite do término</label>
+            <input type="date" id="date" required>
+            <label for="textarea">Descrição</label>
+            <textarea id="desc" cols="30" rows="10" placeholder="Opicional"></textarea>
+            <button type="submit" id="add">Add+</button>
+            <button type="reset" id="cancel">Cancel+</button>
+        </form>
+    </div>
+    <div class="container2">
+        <nav>
+            <ul id="lin">
+            </ul>
+        </nav>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
